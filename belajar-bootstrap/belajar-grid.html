@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar Grid - Bootstrap</title>
+    <link rel="stylesheet" href="./asset/bootstrap-5.3.3/dist/css/bootstrap.min.css">
+    <style>
+        .grid-item {
+            border: 1px solid #ccc;
+            padding: 20px;
+            text-align: center;
+            height: 100%;
+            transition: all 0.3s ease-in-out;
+            box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+        }
+        .grid-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.2);
+        }
+
+        .row {
+            margin-bottom: 10px; 
+        }
+
+        .sidebar,
+        .content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .header {
+            background-color: #023469; 
+            color: #fff;
+            height: 20vh;
+        }
+        .content {
+            background-color: #218839; 
+            color: #fff;
+            height: 35vh;
+        }
+        .sidebar {
+            background-color: #9c9a02; 
+            color: white;
+            height: 35vh;
+        }
+        .contact {
+            background-color: #b92c3a; 
+            color: #fff;
+            height: 20vh;
+        }
+        .footer {
+            background-color: #60686e; 
+            color: #fff;
+            height: 20vh;
+        }
+    </style>
+</head>
+<body>
+
+<!-- HEADERRRR -->
+<div class="container-fluid">
+    <div class="row">
+        <div class="col grid-item header">
+            <h3 class="mt-3">Header</h3>
+            <p>Berisi judul besar yang menarik perhatian pengguna dan memberikan informasi tentang isi halaman atau situs web..</p>
+        </div>
+    </div>
+
+    <!-- CONTENTTTT -->
+    <div class="row">
+        <div class="col-md-8 grid-item content">
+            <h3 class="mt-3">Content</h3>
+            <p>bagian utama dari halaman web yang berisi informasi yang ingin disampaikan kepada pengguna. Konten ini bisa berupa teks, gambar, video, atau kombinasi dari beberapa elemen tersebut..</p>
+        </div>
+        <div class="col-md-4 grid-item sidebar">
+            <h3 class="mt-3">Sidebar</h3>
+            <p>Sidebar sering digunakan untuk menampilkan pengumuman, berita terbaru, atau konten promosi..</p>
+        </div>
+    </div>
+
+    <!-- CONTACTT -->
+    <div class="row">
+        <div class="col grid-item contact">
+            <h3 class="mt-3">Contact</h3>
+            <p>Berisi informasi kontak seperti alamat email, nomor telepon, atau tautan ke halaman kontak yang lebih lengkap..</p>
+        </div>
+    </div>
+
+    <!-- FOOTERRR -->
+    <div class="row">
+        <div class="col grid-item footer">
+            <h3 class="mt-3">Footer</h3>
+            <p>Menampilkan informasi tambahan seperti tautan ke halaman-halaman penting lainnya, informasi perusahaan atau situs web, hak cipta, atau tautan ke media sosial..</p>
+        </div>
+    </div>
+</div>
+
+<script src="./asset/bootstrap-5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
